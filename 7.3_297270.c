@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void sortPointersArray(int array[], int *pointers[], int size)
+void sortPointersArray(int array[], int *pointers[],const int size)
 {
 	int change = 1, min_element, min_element_position;
 	int *temp;
@@ -40,16 +40,21 @@ void printing(int *pointers[], int size)
 int main()
 {
 	int array[10] = {5,7,9,12,61,26,363,242,0,66};
-	int size = sizeof(array)/sizeof(array[0]);
+	const int size = sizeof(array)/sizeof(array[0]);
 	int *pointers[size];
+
 	for (int i=0; i<size; i++)
 	{
 		pointers[i] = &array[i];
 	}
+
 	printf("Nieposortowana tablica A:\n");
 	printing(pointers, size);
+
 	sortPointersArray(array, pointers, size);
+
 	printf("Posortowana tablica A:\n");
 	printing(pointers, size);
+
 	return 0;
 }

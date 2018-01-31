@@ -5,7 +5,7 @@
 void zamienWartosci(int tab2[], int a, int b)
 {
 	int temp = tab2[a];
-	tab2[a]=tab2[b];
+	tab2[a] = tab2[b];
 	tab2[b] = temp;
 }
 
@@ -21,6 +21,7 @@ void wyswietl(int tab[], int rozmiar)
 	for(int i=0; i<rozmiar; i++)
 		printf("%d\n", tab[i]);
 }
+
 void srednia(int tab[], int rozmiar)
 {
 	long long int suma = 0;
@@ -48,11 +49,11 @@ void mediana(int tab[], int rozmiar)
 
 	sortujTablice(tab2, rozmiar);
 
-	double mediana;
-	mediana = (tab2[4]+tab2[5])/2;
+	double mediana = (tab2[4]+tab2[5])/2;
 
 	printf("Mediana wynosi: %lf\n", mediana);
 }
+
 void minmax(int tab[], int rozmiar)
 {
 	int min = tab[0],max = tab[0];
@@ -64,6 +65,7 @@ void minmax(int tab[], int rozmiar)
 
 	printf("Wartosc minimalna: %d\nWartosc maksymalna: %d\n", min, max);
 }
+
 void kontynuuj()
 {
 	char ch;
@@ -73,6 +75,7 @@ void kontynuuj()
 
 	printf("\e[2J\e[H");
 }
+
 int main()
 {
 	int tab[10] = {};

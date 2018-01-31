@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-long long copyArgumentAndPrintCharByCharReturningSumOfArguments(void* data, size_t sizeOfData)
+long long copyArgumentAndPrintCharByCharReturningSumOfArguments(const void* data, size_t sizeOfData)
 {
 	char char_array [sizeOfData];
 	long long int sum = 0;
@@ -16,7 +16,7 @@ long long copyArgumentAndPrintCharByCharReturningSumOfArguments(void* data, size
 }
 int main()
 {
-	char * data = "To jest jakis tekst, ktory zostanie skopiowany do tablicy charowej, a nastepnie wyswietlony znak po znaku";
+	const char * data = "To jest jakis tekst, ktory zostanie skopiowany do tablicy charowej, a nastepnie wyswietlony znak po znaku";
 	printf("\n\nSuma znakow: %lld\n", copyArgumentAndPrintCharByCharReturningSumOfArguments(data, strlen(data)));
 	return 0;
 }

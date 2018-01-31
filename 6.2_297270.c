@@ -86,7 +86,6 @@ void writeHeader(int month, int year)
         case 12:
             printf("Grudzien");
             break;
-           
     }
 
     printf(" %d\n", year);
