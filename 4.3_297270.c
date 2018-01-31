@@ -13,7 +13,6 @@ int przedzial3do5(int kule[])
 	else
 		kula = 5;
 
-
 	return kula;
 }
 
@@ -28,7 +27,6 @@ int przedzial0do2(int kule[])
 	else
 		kula = 2;
 
-
 	return kula;
 }
 
@@ -42,7 +40,6 @@ int przedzial6do8(int kule[])
 		kula = 6;
 	else
 		kula = 8;
-
 
 	return kula;
 }

@@ -5,18 +5,18 @@ int porownaj(char godzina_1[8], char godzina_2[8])
 {
 	int wynik = 0;
 	for (int i=0;i<8;i++)
-		{
+	{
 		if(godzina_1[i] > godzina_2 [i])
-			{
+		{
 			wynik+=1;
 			break;
-			}
+		}
 		else if(godzina_1[i] < godzina_2 [i])
-			{
+		{
 			wynik-=1;
 			break;
-			}
 		}
+	}
 	return wynik;
 }
 
@@ -55,13 +55,13 @@ void podajGodzine(char godzina[8], int ilosc_wywolan)
 		{
 			int warunek = 1;
 			for (int i=0;i<8;i++)
+			{
+				if (godzina[i]>58 || godzina[i]<48)
 				{
-					if (godzina[i]>58 || godzina[i]<48)
-					{
-						warunek = 0;
-						break;
-					}
+					warunek = 0;
+					break;
 				}
+			}
 			if (warunek)
 				break;
 		}
