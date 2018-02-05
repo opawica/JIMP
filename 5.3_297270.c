@@ -25,10 +25,10 @@ void konwertujMacierze(const int rozmiar, int macierz_1[rozmiar][rozmiar], int m
 {
 	for (int i=0;i<rozmiar;i++)
 		for (int j=0;j<rozmiar;j++)
-			{
+		{
 			macierz3d[0][i][j]=macierz_1[i][j];
 			macierz3d[1][i][j]=macierz_2[i][j];
-			}
+		}
 }
 
 

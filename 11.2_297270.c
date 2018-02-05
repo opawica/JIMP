@@ -34,7 +34,6 @@ void sortNumbers(int array[], int size)
 {
 	int change = 1, min_element, min_element_position;
 	int temp;
-	
 	for (int i=0; i<size-1;i++)
 	{	
 		min_element = array[i];
@@ -105,5 +104,4 @@ int main(int argc, char * argv[])
 		printSortedNumbers(tab, numbers_counter);
 	}
 	return 0;
-
 }

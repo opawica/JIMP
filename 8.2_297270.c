@@ -25,7 +25,6 @@ void stringPrinting(char* argument, unsigned width, int half)
 {
 	if (strlen((char*)argument) > width)
 		printf("%s\n", (char**)argument);
-
 	else
 	{
 		for (int i=0; i<half-(strlen((char*)argument)+1)/2;i++)
@@ -48,10 +47,10 @@ void charPrinting(char* argument, int half)
 		}
 		printf("%c\n",*(char*)argument);
 	}
-	}
+}
 
-	void intPrinting(int* argument, unsigned width, int half)
-	{
+void intPrinting(int* argument, unsigned width, int half)
+{
 	int counter;
 	int arg = *(int*)argument;
 	counter = getIntLength(arg);
@@ -114,25 +113,19 @@ void doublePrinting(double* argument, unsigned width, int half)
 int printArgumentInTheMiddle(void* argument, enum ArgumentType type, unsigned width)
 {
 	int half = width/2;
-
 	if (argument == NULL)
 	{
 		printf("\n");
 		return 0;
 	}
-
 	else if (type == STRING)
 		stringPrinting(argument, width, half);
-
 	else if (type == CHAR)
 		charPrinting(argument, half);
-
 	else if (type == INT)
 		intPrinting(argument, width, half);
-
 	else if (type == DOUBLE)
 		doublePrinting(argument, width, half);
-
 	return 0;
 }
 

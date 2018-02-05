@@ -14,6 +14,7 @@ long long copyArgumentAndPrintCharByCharReturningSumOfArguments(const void* data
 	}
 	return sum;
 }
+
 int main()
 {
 	const char * data = "To jest jakis tekst, ktory zostanie skopiowany do tablicy charowej, a nastepnie wyswietlony znak po znaku";

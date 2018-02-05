@@ -3,7 +3,6 @@
 
 void printfAndScanfMerged(const char*text)
 {
-
   while(*text!='\0')
   {
 	if (*text == '%')

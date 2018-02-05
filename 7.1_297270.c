@@ -17,7 +17,7 @@ double countWeightedAverage(int * tabBeginning, int * tabEnding)
 
 int main()
 {
-	int tab[10] = {12, 42, 121, 141, 9, 1, 19, 12, 19, 0};
+	int tab[] = {12, 42, 121, 141, 9, 1, 19, 12, 19, 0};
 	const int size = sizeof(tab)/sizeof(tab[0]);
 	printf("Srednia wazona wynosi: %f", countWeightedAverage(&tab[0], &tab[size-1]));
 

@@ -4,7 +4,6 @@
 
 void wygenerujDoPliku(FILE *file, int args_number)
 {
-
 	int generated_number;
 	for (int i=0; i< args_number; i++)
 	{
@@ -21,16 +20,11 @@ int main(int argc, char * argv[])
 do ktorego chcesz zapisac liczby\n");
 		return 0;
 	}
-
 	srand(time(NULL));
 	FILE *file;
 	file = fopen(argv[2], "w");
-
 	int args_number = strtol(argv[1], NULL, 10);
-
 	wygenerujDoPliku(file, args_number);
 	fclose(file);
-
 	return 0;
-
 }
